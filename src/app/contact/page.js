@@ -3,7 +3,7 @@ import RootLayout from '../layout'
 
 const Contact = () => {
   return (
-    <RootLayout>
+    <>
       <section className="contact">
         <div className="page-top">
           <div className="">
@@ -555,7 +555,7 @@ const Contact = () => {
           </div>
         </main>
       </section>
-    </RootLayout>
+    </>
   )
 }
 

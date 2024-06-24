@@ -6,9 +6,10 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
+    <>
     <nav className="lg:container mx-auto flex justify-between items-center py-[30px] lg:px-0 px-4">
       <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+        <span className="text-black self-center text-2xl font-semibold whitespace-nowrap ">
           houzez
         </span>
       </a>
@@ -63,6 +64,7 @@ function App() {
         <div></div>
       </div>
     </nav>
+    </>
   );
 }
 export default App;
