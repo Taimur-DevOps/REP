@@ -17,7 +17,7 @@ import FeaturedCarousel from "./components/FeaturedCarousel";
 
 export default function Home() {
   return (
-    <RootLayout>
+    <>
       <Banner />
       <Filters />
       <AboutUsSection />
@@ -26,6 +26,6 @@ export default function Home() {
       <Categories />
       <FeaturedCarousel />
       <KeepInTouch />
-    </RootLayout>
+    </>
   );
 }

@@ -95,7 +95,7 @@ const FeaturedCarousel = () => {
         <div className="mx-auto lg:container py-24 lg:px-0 px-7">
           <div className="mb-5">
             <h3 className=" text-4xl font-bold font-nokara">
-              Featured Properties​
+              Featured Properties
             </h3>
             <p className="text-base font-thin leading-7 max-w-[490px] mt-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -165,9 +165,9 @@ const FeaturedCarousel = () => {
                         </span>
                       </div>
                       <div>
-                        <span className="text-xs uppercase bg-black text-white px-1">
-                          For rent
-                        </span>
+                        {/* <span className="text-xs uppercase bg-black text-white px-1">
+                            For rent
+                          </span> */}
                         <span className="text-xs uppercase bg-[#cbb492] text-white px-1 ml-2">
                           New
                         </span>

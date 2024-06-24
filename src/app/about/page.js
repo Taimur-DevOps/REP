@@ -3,7 +3,7 @@ import RootLayout from '../layout'
 
 const About = () => {
   return (
-    <RootLayout>
+    <>
       <section className="about">
         <div className="page-top">
           <div className="container">
@@ -49,7 +49,7 @@ const About = () => {
 
         </div>
       </section>
-    </RootLayout>
+    </>
   )
 }
 

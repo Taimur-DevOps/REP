@@ -37,6 +37,45 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 
 
+<!-- 
+#Main
+property_id
+Title
+Desc
+Price
+Images
+Location       [important]
+property_type  [important]
+Bedrooms
+Bathrooms
+Garage
+Area size      [5 Marla , 10 Marla 15 Marla ]
+Year built 
+Featured       [yes or No]
+
+
+
+#Features
+Air Conditioning 
+Lawn
+Pool
+Barbeque
+Gym
+Cinema
+Wifi
+Basement
+etc etc
+
+
+#Contact
+Name
+Email 
+contact
+Message
+
+ -->
+
+
 
 
 
