@@ -58,7 +58,7 @@ const AdminListingForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="max-w-xl mx-auto p-4 mb-4 space-y-4 border bg-[#F8F8F8] rounded-lg">
+        <form onSubmit={handleSubmit} className="w-full lg:max-w-xl md:mx-auto p-2 lg:p-4 mb-4 space-y-4 border bg-[#F8F8F8] rounded-lg">
             {/* Id and Title */}
             <div className=" flex items-center gap-2">
                 <div className=''>
@@ -112,9 +112,9 @@ const AdminListingForm = () => {
                     </select>
                 </div>
 
-                <div className="w-1/2">
+                <div className="w-1/2 ">
                     <label className="block text-sm font-medium text-gray-700">Area Size</label>
-                    <select name="areaSize" value={formData.areaSize} onChange={handleChange} className="block w-full p-2 border border-gray-300 rounded-md">
+                    <select name="areaSize" value={formData.areaSize} onChange={handleChange} className=" overflow-auto  w-full p-2 border border-gray-300 rounded-md">
                         <option value="">Select Area Size</option>
                         <option value="marla5">5 Marla</option>
                         <option value="marla10">10 Marla</option>
@@ -167,13 +167,13 @@ const AdminListingForm = () => {
                 )}
             </div>
             {/* year built and Featured */}
-            <div className='flex items-center justify-between'>
+            <div className='flex items-center justify-between gap-2'>
                 <div className="">
                     <label className="block text-sm font-medium text-gray-700">Year Built</label>
                     <input type="number" name="yearBuilt" value={formData.yearBuilt} onChange={handleChange} className="block w-full p-2 border border-gray-300 rounded-md" />
                 </div>
                 <div className="">
-                    <label className="block text-sm font-medium text-gray-700">Featured Property</label>
+                    <label className="block text-sm font-medium text-gray-700 whitespace-nowrap">Featured Property</label>
                     <input type="checkbox" name="featured" checked={formData.featured} onChange={handleChange} className="h-5 w-5 text-indigo-600 border-gray-300 rounded" />
                 </div>
             </div>
