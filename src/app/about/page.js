@@ -1,56 +1,158 @@
-import React from 'react'
-import RootLayout from '../layout'
+import React from "react";
+import Image from "next/image";
+import member1 from "@/assets/member1.jpg";
+import member2 from "@/assets/member2.jpg";
+import member3 from "@/assets/member3.jpg";
+import member4 from "@/assets/member4.jpg";
 
 const About = () => {
   return (
     <>
-      <section className="about">
-        <div className="page-top">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <h1 className="page-title">About Us</h1>
-                {/* <h2 className="page-description">About</h2> */}
+      <section className="">
+        <div className="relative">
+          <div className="contactBanner">
+            <div className="h-[200px] bg-lightBlack opacity-[0.5] w-full"></div>
+          </div>
+          <div className="lg:container mx-0 lg:px-0 px-5">
+            <h1 className="absolute top-[65px] text-4xl leading-[1.5em] font-bold font-nokara text-white">
+              About Us
+            </h1>
+          </div>
+        </div>
+        <main className="lg:container mx-auto py-24 lg:px-0 px-5">
+          <h3 className="text-4xl font-bold font-nokara">
+            Your Vision Unrestricted
+          </h3>
+          <div className="flex lg:flex-row flex-col items-center gap-6 text-base font-nokara text-[#54595f] font-normal mt-8">
+            <p className="flex flex-col gap-3">
+              <span>
+                {" "}
+                REP is a premium WordPress theme for real estate agents and
+                agencies where modern aesthetics are combined with a tasteful
+                simplicity and where the ease of use is achieved without
+                compromise in your ability to customize the design.
+              </span>
+              <span>
+                {" "}
+                Whether you are a real estate agent looking to build a website
+                for your company or a web developer seeking a perfect WordPress
+                theme for your next project, you are certain to appreciate the
+                numerous features and benefits that our theme provides.
+              </span>
+            </p>
+            <p className="-mt-5 flex flex-col gap-3">
+              <span>
+                {" "}
+                REP is also a WordPress-based property management system
+                which allows you to own and maintain a real estate marketplace,
+                coordinate your agents, accept submissions and offer membership
+                packages.
+              </span>
+              <span>
+                {" "}
+                Unlike many other real estate themes which confine you to a
+                handful of predefined layouts, REP offers a limitless array
+                of possibilities to structure and style your content. All of the
+                customization options are logically organized in your WordPress
+                admin panel and thorough customization in the provided
+                documentation.
+              </span>
+            </p>
+          </div>
+        </main>
+        <main className="bg-bgGray">
+          <div className="lg:container mx-auto py-20 lg:px-0 px-5">
+            <div className="mb-16">
+              <h2 className="text-4xl font-bold font-nokara mb-4">
+                Meet Our Team
+              </h2>
+              <p className="text-base font-thin leading-7">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+            <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-7 ">
+              <div className="teamMember1 relative">
+                <div>
+                  <Image alt="member1" src={member1} />
+                  <div className="card">
+                    <span className="font-semibold"> Kathleen Grant </span>
+                    <span>Funder </span>
+                  </div>
+                  <div className="shade"></div>
+                </div>
+                <div className="flex flex-col gap-3 text-base font-nokara font-normal absolute top-0 memberDetail">
+                  <span className="font-semibold"> Kathleen Grant </span>
+                  <span className="-mt-3">Funder </span>
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    malesuada, odio sit amet pharetra vehicula, sapien leo
+                    egestas magna, vitae auctor diam magna cursus arcu.
+                  </span>
+                </div>
+              </div>
+              <div className="teamMember1 relative">
+                <div>
+                  <Image alt="member1" src={member2} />
+                  <div className="card">
+                    <span className="font-semibold"> Kathleen Grant </span>
+                    <span>Funder </span>
+                  </div>
+                  <div className="shade"></div>
+                </div>
+                <div className="flex flex-col gap-3 text-base font-nokara font-normal absolute top-0 memberDetail">
+                  <span className="font-semibold"> Kathleen Grant </span>
+                  <span className="-mt-3">Funder </span>
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    malesuada, odio sit amet pharetra vehicula, sapien leo
+                    egestas magna, vitae auctor diam magna cursus arcu.
+                  </span>
+                </div>
+              </div>
+              <div className="teamMember1 relative">
+                <div>
+                  <Image alt="member1" src={member3} />
+                  <div className="card">
+                    <span className="font-semibold"> Kathleen Grant </span>
+                    <span>Funder </span>
+                  </div>
+                  <div className="shade"></div>
+                </div>
+                <div className="flex flex-col gap-3 text-base font-nokara font-normal absolute top-0 memberDetail">
+                  <span className="font-semibold"> Kathleen Grant </span>
+                  <span className="-mt-3">Funder </span>
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    malesuada, odio sit amet pharetra vehicula, sapien leo
+                    egestas magna, vitae auctor diam magna cursus arcu.
+                  </span>
+                </div>
+              </div>
+              <div className="teamMember1 relative">
+                <div>
+                  <Image alt="member1" src={member4} />
+                  <div className="card">
+                    <span className="font-semibold"> Kathleen Grant </span>
+                    <span>Funder </span>
+                  </div>
+                  <div className="shade"></div>
+                </div>
+                <div className="flex flex-col gap-3 text-base font-nokara font-normal absolute top-0 memberDetail">
+                  <span className="font-semibold"> Kathleen Grant </span>
+                  <span className="-mt-3">Funder </span>
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    malesuada, odio sit amet pharetra vehicula, sapien leo
+                    egestas magna, vitae auctor diam magna cursus arcu.
+                  </span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="page-content">
-          <div className="grid grid-cols-1 lg:grid-cols-2  gap-4">
-            <div className=' p-6' >
-              <img src="/img/product1.jpeg" alt="product" className="w-100" />
-            </div>
-            <div className=' p-6 ' >
-              <div className="about-item">
-                <div className="title">Reimagining real estate to
-                  make it easier to unlock.</div>
-                <div className="about-text">
-                  Lorem ipsum is simply free text dolor sit am adipi we help you
-                  ensure everyone is in the right jobs sicing elit, sed do
-                  consulting firms Et leggings across the nation tempor.
-                </div>
-                <div className="about-features">
-                  <p className="about-feature">
-                    Lorem ipsum
-                    is simply
-                  </p>
-                  <p className="about-feature">
-                    Lorem ipsum
-                    is simply
-                  </p>
-                  <p className="about-feature">
-                    Lorem ipsum
-                    is simply
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
+        </main>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;

@@ -7,7 +7,7 @@ const KeepInTouch = () => {
   return (
     <>
       <div className="lg:container mx-auto py-24 lg:px-0 px-7">
-        <div className="flex gap-12 lg:flex-row flex-col">
+        <div className="flex gap-12 lg:flex-row md:flex-row flex-col">
           <div className="flex flex-col gap-5 lg:w-[40%] w-full">
             <span className="ml-3">
               <svg
@@ -15,12 +15,12 @@ const KeepInTouch = () => {
                 preserveAspectRatio="none"
                 overflow="visible"
                 height="15"
-                viewBox="0 0 20 16"
+                // viewBox="0 0 20 16"
                 fill="#fa8f8d"
                 stroke="#fa8f8d"
-                stroke-width="1"
-                stroke-linecap="square"
-                stroke-miterlimit="10"
+                strokeWidth="1"
+                strokeLinecap="square"
+                strokeMiterlimit="10"
               >
                 <g transform="translate(-12.000000, 0)">
                   <path d="M28,0L10,18" />
@@ -39,7 +39,7 @@ const KeepInTouch = () => {
           </div>
           <form className="lg:w-[60%] w-full">
             <div className="flex flex-col gap-3">
-              <div className="flex flex-row gap-3">
+              <div className="flex lg:flex-row md:flex-row flex-col gap-3">
                 <input
                   placeholder="First name"
                   type="text"

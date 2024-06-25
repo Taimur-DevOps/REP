@@ -71,7 +71,7 @@ const DetailPage = () => {
           <section className="pt-10">
             <div className="flex bg-white">
               <div className="tab flex flex-col items-center lg:w-[10%] md:w-[10%]">
-                <button
+                <div
                   className={`tablinks block w-full p-4 text-lg transition duration-300 ${
                     activeTab === "folder" ? "bg-gray-300" : "hover:bg-gray-200"
                   }`}
@@ -79,8 +79,8 @@ const DetailPage = () => {
                   id="defaultOpen"
                 >
                   <CiFolderOn className="w-8 h-8 mx-auto" />
-                </button>
-                <button
+                </div>
+                <div
                   className={`tablinks block w-full p-4 text-lg transition duration-300 ${
                     activeTab === "details"
                       ? "bg-gray-300"
@@ -89,8 +89,8 @@ const DetailPage = () => {
                   onClick={() => openCity("details")}
                 >
                   <PiNotepadLight className="w-8 h-8 mx-auto" />
-                </button>
-                <button
+                </div>
+                <div
                   className={`tablinks block w-full p-4 text-lg transition duration-300 ${
                     activeTab === "features"
                       ? "bg-gray-300"
@@ -99,15 +99,15 @@ const DetailPage = () => {
                   onClick={() => openCity("features")}
                 >
                   <CiSettings className="w-8 h-8 mx-auto" />
-                </button>
-                <button
+                </div>
+                <div
                   className={`tablinks block w-full p-4 text-lg transition duration-300 ${
                     activeTab === "video" ? "bg-gray-300" : "hover:bg-gray-200"
                   }`}
                   onClick={() => openCity("video")}
                 >
                   <PiYoutubeLogoThin className="w-8 h-8 mx-auto" />
-                </button>
+                </div>
               </div>
 
               <div className="tabcontent lg:w-[95%] md:w-[95%] py-4 lg:px-7 px-5">

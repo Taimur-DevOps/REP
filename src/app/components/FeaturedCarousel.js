@@ -9,9 +9,9 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import Image from "next/image";
 import crsl1 from "@/assets/crsl1.jpg";
-import crsl2 from "@/assets/crsl1.jpg";
-import crsl3 from "@/assets/crsl1.jpg";
-import crsl4 from "@/assets/crsl1.jpg";
+import crsl2 from "@/assets/crsl2.jpg";
+import crsl3 from "@/assets/crsl3.jpg";
+import crsl4 from "@/assets/crsl4.jpg";
 import { LuBedDouble } from "react-icons/lu";
 import { PiShowerLight } from "react-icons/pi";
 import { TfiRulerAlt2 } from "react-icons/tfi";
@@ -32,7 +32,7 @@ const featured = [
     meter: "3410",
   },
   {
-    img: crsl1,
+    img: crsl2,
     title: "Luxury villa with pool",
     price: " $990,000.00",
     bedIcon: <LuBedDouble className="w-[18px] h-[18px]" />,
@@ -43,7 +43,7 @@ const featured = [
     meter: "3410",
   },
   {
-    img: crsl1,
+    img: crsl3,
     title: "Luxury villa with pool",
     price: " $990,000.00",
     bedIcon: <LuBedDouble className="w-[18px] h-[18px]" />,
@@ -54,7 +54,7 @@ const featured = [
     meter: "3410",
   },
   {
-    img: crsl1,
+    img: crsl4,
     title: "Luxury villa with pool",
     price: " $990,000.00",
     bedIcon: <LuBedDouble className="w-[18px] h-[18px]" />,
@@ -165,9 +165,7 @@ const FeaturedCarousel = () => {
                         </span>
                       </div>
                       <div>
-                        {/* <span className="text-xs uppercase bg-black text-white px-1">
-                            For rent
-                          </span> */}
+                        
                         <span className="text-xs uppercase bg-[#cbb492] text-white px-1 ml-2">
                           New
                         </span>

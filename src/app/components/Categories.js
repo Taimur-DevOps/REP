@@ -10,7 +10,7 @@ const Categories = () => {
   return (
     <>
       <div className="lg:container mx-auto py-24 lg:px-0 px-7">
-        <div className="flex gap-[3.7rem] lg:flex-row flex-col">
+        <div className="flex gap-[3.7rem] lg:flex-row  flex-col">
           <div className="flex flex-col gap-5">
             <span className="ml-3">
               <svg
@@ -18,12 +18,12 @@ const Categories = () => {
                 preserveAspectRatio="none"
                 overflow="visible"
                 height="15"
-                viewBox="0 0 20 16"
+                // viewBox="0 0 20 16"
                 fill="#fa8f8d"
                 stroke="#fa8f8d"
-                stroke-width="1"
-                stroke-linecap="square"
-                stroke-miterlimit="10"
+                strokeWidth="1"
+                strokeLinecap="square"
+                strokeMiterlimit="10"
               >
                 <g transform="translate(-12.000000, 0)">
                   <path d="M28,0L10,18" />
@@ -45,7 +45,7 @@ const Categories = () => {
             </div>
           </div>
           <div className=" ">
-            <div className="flex lg:flex-row flex-col gap-10">
+            <div className="flex lg:flex-row md:flex-row flex-col gap-10">
               <div className="1st-column relative flex flex-col gap-10">
                 <div className="lg:w-[315px] lg:h-[220px] rounded-[4px]">
                   {" "}
@@ -54,7 +54,7 @@ const Categories = () => {
                     src={phase1}
                     className="rounded-[4px] w-full h-full"
                   />
-                  <div className="absolute top-0 rounded-[4px] lg:w-[315px] lg:h-[220px] w-[319px] h-[212px] bg-black opacity-[0.3] text-white flex justify-between flex-col p-8">
+                  <div className="absolute top-0 rounded-[4px] lg:w-[315px] lg:h-[220px] md:w-[335px] md:h-[224px]  w-[319px] h-[212px] bg-black opacity-[0.3] text-white flex justify-between flex-col p-8">
                     <div className=" flex flex-col">
                       <span className="text-xs">13 Properties</span>
                       <span className="text-base">Apartment</span>
@@ -62,14 +62,14 @@ const Categories = () => {
                     <span className="text-base">More Details</span>
                   </div>
                 </div>
-                <div className="lg:w-[315px] lg:h-[280px] rounded-[4px]">
+                <div className="lg:w-[315px] lg:h-[280px] md:w-[335px] md:h-[260px] rounded-[4px]">
                   {" "}
                   <Image
                     alt="phase2"
                     src={phase2}
                     className="rounded-[4px]  w-full h-full"
                   />
-                  <div className="absolute bottom-0 rounded-[4px] lg:w-[315px] lg:h-[280px] w-[319px] h-[212px] bg-black opacity-[0.3] text-white flex justify-between flex-col p-8">
+                  <div className="absolute bottom-0 rounded-[4px] lg:w-[315px] lg:h-[280px] md:w-[335px] md:h-[260px] w-[319px] h-[212px] bg-black opacity-[0.3] text-white flex justify-between flex-col p-8">
                     <div className=" flex flex-col">
                       <span className="text-xs">13 Properties</span>
                       <span className="text-base">Famile Home</span>
@@ -79,14 +79,14 @@ const Categories = () => {
                 </div>
               </div>
               <div className="2nd-column relative flex flex-col gap-10">
-                <div className="lg:w-[315px] lg:h-[280px] rounded-[4px]">
+                <div className="lg:w-[315px] lg:h-[280px] md:w-[335px] md:h-[260px] rounded-[4px]">
                   {" "}
                   <Image
                     alt="phase2"
                     src={phase3}
                     className="rounded-[4px]  w-full h-full"
                   />
-                  <div className="absolute top-0 rounded-[4px] lg:w-[315px] lg:h-[280px] w-[319px] h-[212px]  bg-black opacity-[0.3] text-white flex justify-between flex-col p-8">
+                  <div className="absolute top-0 rounded-[4px] lg:w-[315px] lg:h-[280px] md:w-[335px] md:h-[260px] w-[319px] h-[212px]  bg-black opacity-[0.3] text-white flex justify-between flex-col p-8">
                     <div className=" flex flex-col">
                       <span className="text-xs">13 Properties</span>
                       <span className="text-base">Loft</span>
@@ -101,7 +101,7 @@ const Categories = () => {
                     src={phase4}
                     className="rounded-[4px] w-full h-full"
                   />
-                  <div className="absolute bottom-0 rounded-[4px] lg:w-[315px] lg:h-[220px] w-[319px] h-[212px] bg-black opacity-[0.3] text-white flex justify-between flex-col p-8">
+                  <div className="absolute bottom-0 rounded-[4px] lg:w-[315px] lg:h-[220px] md:w-[335px] md:h-[224px] w-[319px] h-[212px] bg-black opacity-[0.3] text-white flex justify-between flex-col p-8">
                     <div className=" flex flex-col">
                       <span className="text-xs">13 Properties</span>
                       <span className="text-base">Villa</span>
