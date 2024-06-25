@@ -7,20 +7,20 @@ const KeepInTouch = () => {
   return (
     <>
       <div className="lg:container mx-auto py-24 lg:px-0 px-7">
-        <div className="flex gap-12 lg:flex-row md:flex-row flex-col">
-          <div className="flex flex-col gap-5 lg:w-[40%] w-full">
+        <div className="flex lg:gap-12 md:gap-10 gap-12 lg:flex-row md:flex-row flex-col">
+          <div className="flex flex-col gap-5 lg:w-[40%] md:w-[40%] w-full">
             <span className="ml-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 preserveAspectRatio="none"
                 overflow="visible"
                 height="15"
-                // viewBox="0 0 20 16"
+                viewBox="0 0 20 16"
                 fill="#fa8f8d"
                 stroke="#fa8f8d"
-                strokeWidth="1"
-                strokeLinecap="square"
-                strokeMiterlimit="10"
+                stroke-width="1"
+                stroke-linecap="square"
+                stroke-miterlimit="10"
               >
                 <g transform="translate(-12.000000, 0)">
                   <path d="M28,0L10,18" />
@@ -30,14 +30,14 @@ const KeepInTouch = () => {
                 </g>
               </svg>
             </span>
-            <h2 className="text-4xl font-bold font-nokara leading-[1.5em] pr-10">
+            <h2 className="text-4xl font-bold font-nokara leading-[1.5em] lg:pr-10">
               Keep In Touch With Our Team
             </h2>
             <div className="w-[120px] h-[120px]">
               <Image alt="keep in touch" src={keepintouch} className="w-full" />
             </div>
           </div>
-          <form className="lg:w-[60%] w-full">
+          <form className="lg:w-[60%] md:w-[60%] w-full">
             <div className="flex flex-col gap-3">
               <div className="flex lg:flex-row md:flex-row flex-col gap-3">
                 <input

@@ -53,7 +53,7 @@ export default function Button({
           </div>
         ) : (
           <div
-            className={`flex items-center justify-center gap-2 py-[2px] ${className}`}
+            className={`flex items-center justify-center gap-2 ${className}`}
           >
             {icon ? <span className="h-5 w-5 ">{icon}</span> : null}
             <span className="">{text}</span>

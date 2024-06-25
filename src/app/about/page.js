@@ -4,6 +4,10 @@ import member1 from "@/assets/member1.jpg";
 import member2 from "@/assets/member2.jpg";
 import member3 from "@/assets/member3.jpg";
 import member4 from "@/assets/member4.jpg";
+import { LuFacebook } from "react-icons/lu";
+import { PiInstagramLogoLight } from "react-icons/pi";
+import { PiTiktokLogoThin } from "react-icons/pi";
+import { PiYoutubeLogoThin } from "react-icons/pi";
 
 const About = () => {
   return (
@@ -43,16 +47,16 @@ const About = () => {
             <p className="-mt-5 flex flex-col gap-3">
               <span>
                 {" "}
-                REP is also a WordPress-based property management system
-                which allows you to own and maintain a real estate marketplace,
+                REP is also a WordPress-based property management system which
+                allows you to own and maintain a real estate marketplace,
                 coordinate your agents, accept submissions and offer membership
                 packages.
               </span>
               <span>
                 {" "}
                 Unlike many other real estate themes which confine you to a
-                handful of predefined layouts, REP offers a limitless array
-                of possibilities to structure and style your content. All of the
+                handful of predefined layouts, REP offers a limitless array of
+                possibilities to structure and style your content. All of the
                 customization options are logically organized in your WordPress
                 admin panel and thorough customization in the provided
                 documentation.
@@ -80,14 +84,31 @@ const About = () => {
                   </div>
                   <div className="shade"></div>
                 </div>
-                <div className="flex flex-col gap-3 text-base font-nokara font-normal absolute top-0 memberDetail">
-                  <span className="font-semibold"> Kathleen Grant </span>
-                  <span className="-mt-3">Funder </span>
-                  <span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    malesuada, odio sit amet pharetra vehicula, sapien leo
-                    egestas magna, vitae auctor diam magna cursus arcu.
-                  </span>
+                <div className="flex justify-between flex-col lg:gap-0 gap-4 text-base font-nokara font-normal absolute top-0 memberDetail">
+                  <div className="flex flex-col gap-3">
+                    {" "}
+                    <span className="font-semibold"> Kathleen Grant </span>
+                    <span className="-mt-3">Funder </span>
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      In malesuada, odio sit amet pharetra vehicula, sapien leo
+                      egestas magna, vitae auctor diam magna cursus arcu.
+                    </span>
+                  </div>
+                  <div className="flex flex-row gap-1 justify-center">
+                    <span className="">
+                      <LuFacebook className="text-[#506dab] w-7 h-7 icon" />
+                    </span>
+                    <span className="">
+                      <PiTiktokLogoThin className="text-black w-7 h-7 icon" />
+                    </span>
+                    <span className="">
+                      <PiInstagramLogoLight className="text-[#d62976] w-7 h-7 icon" />
+                    </span>
+                    <span className="">
+                      <PiYoutubeLogoThin className="text-[#cd201f] w-7 h-7 icon" />
+                    </span>
+                  </div>
                 </div>
               </div>
               <div className="teamMember1 relative">
@@ -99,14 +120,30 @@ const About = () => {
                   </div>
                   <div className="shade"></div>
                 </div>
-                <div className="flex flex-col gap-3 text-base font-nokara font-normal absolute top-0 memberDetail">
-                  <span className="font-semibold"> Kathleen Grant </span>
-                  <span className="-mt-3">Funder </span>
-                  <span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    malesuada, odio sit amet pharetra vehicula, sapien leo
-                    egestas magna, vitae auctor diam magna cursus arcu.
-                  </span>
+                <div className="flex flex-col justify-between lg:gap-0 gap-4 text-base font-nokara font-normal absolute top-0 memberDetail">
+                  <div className="flex flex-col gap-3">
+                    <span className="font-semibold"> Kathleen Grant </span>
+                    <span className="-mt-3">Funder </span>
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      In malesuada, odio sit amet pharetra vehicula, sapien leo
+                      egestas magna, vitae auctor diam magna cursus arcu.
+                    </span>
+                  </div>
+                  <div className="flex flex-row gap-1 justify-center">
+                    <span className="">
+                      <LuFacebook className="text-[#506dab] w-7 h-7 icon" />
+                    </span>
+                    <span className="">
+                      <PiTiktokLogoThin className="text-black w-7 h-7 icon" />
+                    </span>
+                    <span className="">
+                      <PiInstagramLogoLight className="text-[#d62976] w-7 h-7 icon" />
+                    </span>
+                    <span className="">
+                      <PiYoutubeLogoThin className="text-[#cd201f] w-7 h-7 icon" />
+                    </span>
+                  </div>
                 </div>
               </div>
               <div className="teamMember1 relative">
@@ -118,14 +155,30 @@ const About = () => {
                   </div>
                   <div className="shade"></div>
                 </div>
-                <div className="flex flex-col gap-3 text-base font-nokara font-normal absolute top-0 memberDetail">
-                  <span className="font-semibold"> Kathleen Grant </span>
-                  <span className="-mt-3">Funder </span>
-                  <span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    malesuada, odio sit amet pharetra vehicula, sapien leo
-                    egestas magna, vitae auctor diam magna cursus arcu.
-                  </span>
+                <div className="flex flex-col justify-between lg:gap-0 gap-4 text-base font-nokara font-normal absolute top-0 memberDetail">
+                  <div className="flex flex-col gap-3">
+                    <span className="font-semibold"> Kathleen Grant </span>
+                    <span className="-mt-3">Funder </span>
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      In malesuada, odio sit amet pharetra vehicula, sapien leo
+                      egestas magna, vitae auctor diam magna cursus arcu.
+                    </span>
+                  </div>
+                  <div className="flex flex-row gap-1 justify-center">
+                    <span className="">
+                      <LuFacebook className="text-[#506dab] w-7 h-7 icon" />
+                    </span>
+                    <span className="">
+                      <PiTiktokLogoThin className="text-black w-7 h-7 icon" />
+                    </span>
+                    <span className="">
+                      <PiInstagramLogoLight className="text-[#d62976] w-7 h-7 icon" />
+                    </span>
+                    <span className="">
+                      <PiYoutubeLogoThin className="text-[#cd201f] w-7 h-7 icon" />
+                    </span>
+                  </div>
                 </div>
               </div>
               <div className="teamMember1 relative">
@@ -137,14 +190,30 @@ const About = () => {
                   </div>
                   <div className="shade"></div>
                 </div>
-                <div className="flex flex-col gap-3 text-base font-nokara font-normal absolute top-0 memberDetail">
-                  <span className="font-semibold"> Kathleen Grant </span>
-                  <span className="-mt-3">Funder </span>
-                  <span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    malesuada, odio sit amet pharetra vehicula, sapien leo
-                    egestas magna, vitae auctor diam magna cursus arcu.
-                  </span>
+                <div className="flex flex-col justify-between lg:gap-0 gap-4 text-base font-nokara font-normal absolute top-0 memberDetail">
+                  <div className="flex flex-col gap-3 ">
+                    <span className="font-semibold"> Kathleen Grant </span>
+                    <span className="-mt-3">Funder </span>
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      In malesuada, odio sit amet pharetra vehicula, sapien leo
+                      egestas magna, vitae auctor diam magna cursus arcu.
+                    </span>
+                  </div>
+                  <div className="flex flex-row gap-1 justify-center">
+                    <span className="">
+                      <LuFacebook className="text-[#506dab] w-7 h-7 icon" />
+                    </span>
+                    <span className="">
+                      <PiTiktokLogoThin className="text-black w-7 h-7 icon" />
+                    </span>
+                    <span className="">
+                      <PiInstagramLogoLight className="text-[#d62976] w-7 h-7 icon" />
+                    </span>
+                    <span className="">
+                      <PiYoutubeLogoThin className="text-[#cd201f] w-7 h-7 icon" />
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>

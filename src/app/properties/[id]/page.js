@@ -1,6 +1,5 @@
 "use client";
 
-import Banner from "@/app/components/Banner";
 import Breadcrumb from "@/app/components/Breadcrumb";
 import React, { useState } from "react";
 import { CiLocationOn } from "react-icons/ci";
@@ -14,6 +13,7 @@ import { LuBedDouble } from "react-icons/lu";
 import { PiShowerLight } from "react-icons/pi";
 import { TfiRulerAlt2 } from "react-icons/tfi";
 import { PiPoliceCarLight } from "react-icons/pi";
+import Gallery from "@/app/components/Gallery";
 
 const featureList = [
   {
@@ -46,7 +46,8 @@ const DetailPage = () => {
   };
   return (
     <>
-      <Banner />
+      <Gallery />
+
       <section className="bg-bgGray">
         <div className="lg:container mx-auto py-14">
           {/* heading with breadcrumb */}
@@ -145,7 +146,9 @@ const DetailPage = () => {
                 {activeTab === "details" && (
                   <div id="details" className="pb-8">
                     <div className="flex lg:justify-between lg:items-center lg:flex-row flex-col">
-                      <h3 className="text-xl font-bold lg:mt-5 lg:mb-8 mt-5">Details</h3>
+                      <h3 className="text-xl font-bold lg:mt-5 lg:mb-8 mt-5">
+                        Details
+                      </h3>
                       <p className="text-sm font-normal text-lightGray flex items-center gap-2 lg:my-0 my-3">
                         <SlCalender /> Updated on April 4, 2020 at 5:25 pm
                       </p>
@@ -159,53 +162,55 @@ const DetailPage = () => {
                         </div>
                         <hr className=" my-1 " />
                         <div className="flex items-center justify-between text-base">
-                          <span className="font-semibold">Property ID:</span>
-                          <span className="font-normal">HZ11</span>
+                          <span className="font-semibold">Price:</span>
+                          <span className="font-normal">$570,000.00</span>
                         </div>
                         <hr className=" my-1 " />
                         <div className="flex items-center justify-between text-base">
-                          <span className="font-semibold">Property ID:</span>
-                          <span className="font-normal">HZ11</span>
+                          <span className="font-semibold">Property Size:</span>
+                          <span className="font-normal">3400 Sq Ft</span>
                         </div>
                         <hr className=" my-1 " />
                         <div className="flex items-center justify-between text-base">
-                          <span className="font-semibold">Property ID:</span>
-                          <span className="font-normal">HZ11</span>
+                          <span className="font-semibold">Bedrooms:</span>
+                          <span className="font-normal">4</span>
                         </div>
                         <hr className=" my-1 " />
                         <div className="flex items-center justify-between text-base">
-                          <span className="font-semibold">Property ID:</span>
-                          <span className="font-normal">HZ11</span>
+                          <span className="font-semibold">Bathrooms:</span>
+                          <span className="font-normal">2</span>
                         </div>
                       </div>
                       <div className="2-column lg:w-1/2 w-full">
                         <div className="flex items-center justify-between text-base">
-                          <span className="font-semibold">Property ID:</span>
-                          <span className="font-normal">HZ11</span>
+                          <span className="font-semibold">Garage:</span>
+                          <span className="font-normal">1</span>
                         </div>
                         <hr className=" my-1 " />
                         <div className="flex items-center justify-between text-base">
-                          <span className="font-semibold">Property ID:</span>
-                          <span className="font-normal">HZ11</span>
+                          <span className="font-semibold">Garage Size:</span>
+                          <span className="font-normal">200 SqFt</span>
                         </div>
                         <hr className=" my-1 " />
                         <div className="flex items-center justify-between text-base">
-                          <span className="font-semibold">Property ID:</span>
-                          <span className="font-normal">HZ11</span>
+                          <span className="font-semibold">Year Built</span>
+                          <span className="font-normal">2016</span>
                         </div>
                         <hr className=" my-1 " />
                         <div className="flex items-center justify-between text-base">
-                          <span className="font-semibold">Property ID:</span>
-                          <span className="font-normal">HZ11</span>
+                          <span className="font-semibold">Property Type:</span>
+                          <span className="font-normal">Loft</span>
                         </div>
                         <hr className=" my-1 " />
                         <div className="flex items-center justify-between text-base">
-                          <span className="font-semibold">Property ID:</span>
-                          <span className="font-normal">HZ11</span>
+                          <span className="font-semibold">
+                            Property Status:
+                          </span>
+                          <span className="font-normal">For Sale</span>
                         </div>
                       </div>
                     </div>
-                    <div className="flex flex-col">
+                    {/* <div className="flex flex-col">
                       <h3 className="text-xl font-bold mt-6">
                         Additional Details
                       </h3>
@@ -244,7 +249,7 @@ const DetailPage = () => {
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 )}
                 {activeTab === "features" && (
@@ -280,7 +285,9 @@ const DetailPage = () => {
           {/* overview */}
           <section className="bg-white mt-8 pb-8 px-8">
             <div className="flex justify-between items-center">
-              <h3 className="text-xl font-bold lg:mt-5 lg:mb-8 my-5">Overview</h3>
+              <h3 className="text-xl font-bold lg:mt-5 lg:mb-8 my-5">
+                Overview
+              </h3>
               <p className="text-base font-semibold text-lightGray flex items-center gap-1">
                 Property ID:<span className="font-normal"> HZ11</span>
               </p>
@@ -294,23 +301,38 @@ const DetailPage = () => {
                 </span>
               </div>
               <div className="flex flex-col text-base">
-                <span className="font-semibold flex items-center gap-2"> <LuBedDouble className="w-[18px] h-[18px]" /> 1</span>
+                <span className="font-semibold flex items-center gap-2">
+                  {" "}
+                  <LuBedDouble className="w-[18px] h-[18px]" /> 1
+                </span>
                 <span className="font-normal text-lightGray">Bedrooms</span>
               </div>
               <div className="flex flex-col text-base">
-                <span className="font-semibold flex items-center gap-2"> <PiShowerLight className="w-[18px] h-[18px]" /> 1</span>
+                <span className="font-semibold flex items-center gap-2">
+                  {" "}
+                  <PiShowerLight className="w-[18px] h-[18px]" /> 1
+                </span>
                 <span className="font-normal text-lightGray">Bathroom</span>
               </div>
               <div className="flex flex-col text-base">
-                <span className="font-semibold flex items-center gap-2"> <PiPoliceCarLight />1</span>
+                <span className="font-semibold flex items-center gap-2">
+                  {" "}
+                  <PiPoliceCarLight />1
+                </span>
                 <span className="font-normal text-lightGray">Garage</span>
               </div>
               <div className="flex flex-col text-base">
-                <span className="font-semibold flex items-center gap-2"> <TfiRulerAlt2 className="w-[18px] h-[18px]" /> 1245</span>
+                <span className="font-semibold flex items-center gap-2">
+                  {" "}
+                  <TfiRulerAlt2 className="w-[18px] h-[18px]" /> 1245
+                </span>
                 <span className="font-normal text-lightGray">Sq Ft</span>
               </div>
               <div className="flex flex-col text-base">
-                <span className="font-semibold flex items-center gap-2"> <SlCalender /> 2016</span>
+                <span className="font-semibold flex items-center gap-2">
+                  {" "}
+                  <SlCalender /> 2016
+                </span>
                 <span className="font-normal text-lightGray">Year Built</span>
               </div>
             </div>

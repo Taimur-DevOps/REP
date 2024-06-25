@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import { Navigation } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 import Image from "next/image";
 import crsl1 from "@/assets/crsl1.jpg";
 import crsl2 from "@/assets/crsl2.jpg";
@@ -77,6 +78,18 @@ const featured = [
   },
 ];
 
+const subImages = [
+  {
+    img: crsl4,
+  },
+  {
+    img: crsl2,
+  },
+  {
+    img: crsl1,
+  },
+];
+
 const FeaturedCarousel = () => {
   const breakpoints = {
     1024: {
@@ -111,11 +124,10 @@ const FeaturedCarousel = () => {
               clickable: true,
             }}
             modules={[Navigation]}
-            className="mySwiper"
+            className="featureSwiper"
           >
             {featured.map((item, index) => {
               const {
-                img,
                 title,
                 price,
                 beds,
@@ -127,13 +139,27 @@ const FeaturedCarousel = () => {
               } = item;
               return (
                 // eslint-disable-next-line react/jsx-key
-                <SwiperSlide key={index}>
+                <SwiperSlide key={index} className="">
                   <div className=" rounded-[4px] bg-white shadow-sm relative">
-                    <Image
-                      alt="tesla"
-                      src={img}
-                      className="w-full rounded-t-[4px]"
-                    />
+                    <Swiper
+                      pagination={true}
+                      modules={[Pagination]}
+                      className="subImgsNavigation"
+                    >
+                      {subImages.map((item, index) => {
+                        const { img } = item;
+                        return (
+                          <SwiperSlide key={index}>
+                            <Image
+                              alt="tesla"
+                              src={img}
+                              className="w-full rounded-t-[4px]"
+                            />
+                          </SwiperSlide>
+                        );
+                      })}
+                    </Swiper>
+
                     <div className="flex gap-2 flex-col p-5">
                       <h4 className="text-base font-bold">{title}</h4>
                       <div className="flex justify-between items-center">
@@ -156,7 +182,7 @@ const FeaturedCarousel = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="absolute top-[5px] w-full">
+                  <div className="absolute top-[5px] w-full z-[1]">
                     <div className="flex justify-between items-center px-2">
                       <div>
                         {" "}
@@ -165,7 +191,6 @@ const FeaturedCarousel = () => {
                         </span>
                       </div>
                       <div>
-                        
                         <span className="text-xs uppercase bg-[#cbb492] text-white px-1 ml-2">
                           New
                         </span>

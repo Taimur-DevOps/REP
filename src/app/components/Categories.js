@@ -5,13 +5,14 @@ import phase1 from "@/assets/phase1.jpg";
 import phase2 from "@/assets/phase2.jpg";
 import phase3 from "@/assets/phase3.jpg";
 import phase4 from "@/assets/phase4.jpg";
+import { PiPlayLight } from "react-icons/pi";
 
 const Categories = () => {
   return (
     <>
       <div className="lg:container mx-auto py-24 lg:px-0 px-7">
         <div className="flex gap-[3.7rem] lg:flex-row  flex-col">
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 lg:w-[37%]">
             <span className="ml-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -44,69 +45,81 @@ const Categories = () => {
               <Button text="Discover" variant="primary" />
             </div>
           </div>
-          <div className=" ">
+          <div className="lg:w-[63%]">
             <div className="flex lg:flex-row md:flex-row flex-col gap-10">
-              <div className="1st-column relative flex flex-col gap-10">
-                <div className="lg:w-[315px] lg:h-[220px] rounded-[4px]">
+              <div className="1st-column relative flex flex-col gap-10 lg:w-1/2">
+                <div className="h-[220px] rounded-[4px] cursor-pointer phases">
                   {" "}
                   <Image
                     alt="phase1"
                     src={phase1}
                     className="rounded-[4px] w-full h-full"
                   />
-                  <div className="absolute top-0 rounded-[4px] lg:w-[315px] lg:h-[220px] md:w-[335px] md:h-[224px]  w-[319px] h-[212px] bg-black opacity-[0.3] text-white flex justify-between flex-col p-8">
+                  <div className="bgshade absolute top-0 rounded-[4px] w-full h-[220px] bg-black opacity-[0.3]"></div>
+                  <div className="absolute top-0 rounded-[4px] w-full h-[220px] text-white flex justify-between flex-col p-8">
                     <div className=" flex flex-col">
                       <span className="text-xs">13 Properties</span>
-                      <span className="text-base">Apartment</span>
+                      <span className="text-xl">Apartment</span>
                     </div>
-                    <span className="text-base">More Details</span>
+                    <span className="text-xs uppercase flex justify-between items-center">
+                      More Details <PiPlayLight className="w-4 h-4" />
+                    </span>
                   </div>
                 </div>
-                <div className="lg:w-[315px] lg:h-[280px] md:w-[335px] md:h-[260px] rounded-[4px]">
+                <div className="h-[280px] rounded-[4px] cursor-pointer phases">
                   {" "}
                   <Image
                     alt="phase2"
                     src={phase2}
                     className="rounded-[4px]  w-full h-full"
                   />
-                  <div className="absolute bottom-0 rounded-[4px] lg:w-[315px] lg:h-[280px] md:w-[335px] md:h-[260px] w-[319px] h-[212px] bg-black opacity-[0.3] text-white flex justify-between flex-col p-8">
+                  <div className="bgshade absolute bottom-0 rounded-[4px] h-[280px] w-full bg-black opacity-[0.3]"></div>
+                  <div className="absolute bottom-0 rounded-[4px] h-[280px] w-full text-white flex justify-between flex-col p-8">
                     <div className=" flex flex-col">
                       <span className="text-xs">13 Properties</span>
-                      <span className="text-base">Famile Home</span>
+                      <span className="text-xl">Famile Home</span>
                     </div>
-                    <span className="text-base">More Details</span>
+                    <span className="text-xs uppercase flex justify-between items-center">
+                      More Details <PiPlayLight className="w-4 h-4" />
+                    </span>
                   </div>
                 </div>
               </div>
-              <div className="2nd-column relative flex flex-col gap-10">
-                <div className="lg:w-[315px] lg:h-[280px] md:w-[335px] md:h-[260px] rounded-[4px]">
+              <div className="2nd-column relative flex flex-col gap-10 lg:w-1/2">
+                <div className="h-[280px] rounded-[4px] cursor-pointer phases">
                   {" "}
                   <Image
                     alt="phase2"
                     src={phase3}
                     className="rounded-[4px]  w-full h-full"
                   />
-                  <div className="absolute top-0 rounded-[4px] lg:w-[315px] lg:h-[280px] md:w-[335px] md:h-[260px] w-[319px] h-[212px]  bg-black opacity-[0.3] text-white flex justify-between flex-col p-8">
+                  <div className="bgshade absolute top-0 rounded-[4px] h-[280px] w-full bg-black opacity-[0.3]"></div>
+                  <div className="absolute top-0 rounded-[4px] h-[280px] w-full text-white flex justify-between flex-col p-8">
                     <div className=" flex flex-col">
                       <span className="text-xs">13 Properties</span>
-                      <span className="text-base">Loft</span>
+                      <span className="text-xl">Loft</span>
                     </div>
-                    <span className="text-base">More Details</span>
+                    <span className="text-xs uppercase flex justify-between items-center">
+                      More Details <PiPlayLight className="w-4 h-4" />
+                    </span>
                   </div>
                 </div>
-                <div className="lg:w-[315px] lg:h-[220px] rounded-[4px]">
+                <div className="h-[220px] rounded-[4px] cursor-pointer phases">
                   {" "}
                   <Image
                     alt="phase1"
                     src={phase4}
                     className="rounded-[4px] w-full h-full"
                   />
-                  <div className="absolute bottom-0 rounded-[4px] lg:w-[315px] lg:h-[220px] md:w-[335px] md:h-[224px] w-[319px] h-[212px] bg-black opacity-[0.3] text-white flex justify-between flex-col p-8">
+                  <div className="bgshade absolute bottom-0 rounded-[4px] w-full h-[220px]  bg-black opacity-[0.3]"></div>
+                  <div className="absolute bottom-0 rounded-[4px] w-full h-[220px] text-white flex justify-between flex-col p-8">
                     <div className=" flex flex-col">
                       <span className="text-xs">13 Properties</span>
-                      <span className="text-base">Villa</span>
+                      <span className="text-xl">Villa</span>
                     </div>
-                    <span className="text-base">More Details</span>
+                    <span className="text-xs uppercase flex justify-between items-center">
+                      More Details <PiPlayLight className="w-4 h-4" />
+                    </span>
                   </div>
                 </div>
               </div>

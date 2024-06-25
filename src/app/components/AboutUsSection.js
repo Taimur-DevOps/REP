@@ -10,7 +10,7 @@ const AboutUsSection = () => {
         <div className="lg:container mx-auto">
           <div className="flex lg:gap-16 md:gap-10 gap-10 flex-col lg:flex-row md:flex-row">
             <div className="lg:w-[30%] md:w-auto w-full">
-              <div className="h-[316px] w-[316px]">
+              <div className="lg:h-[316px] lg:w-[316px] md:h-[316px] md:w-[316px] w-full">
                 <Image
                   alt="about us"
                   className="w-full h-full"
