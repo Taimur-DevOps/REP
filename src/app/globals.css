@@ -58,7 +58,7 @@
   opacity: 1 !important;
 }
 .swiper-button-next {
-  right: 30px !important;
+  right: 10px !important;
 }
 
 .footerIcons:hover {
@@ -73,17 +73,141 @@
 }
 .propertyFeatured .swiper .swiper-button-prev {
   top: 28px !important;
-  left: 90% !important;
+  left: 92.5% !important;
 }
 .propertyFeatured .swiper .swiper-button-next:after {
   content: "next" !important;
 }
+.filterDropdown {
+  width: 160px !important;
+  /* top: 765px !important; */
+  padding: 10px 5px !important;
+}
+input,
+label,
+select,
+button {
+  height: 38px !important;
+}
 
-/* mobile responsive */
-@media only screen and (max-width: 768px) and (min-width: 320px) {
-  .swiper-button-prev:after,
+.contactBanner {
+  background-image: url("../assets/contactBanner.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 200px;
+}
+
+.teamMember1 .card {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  height: 80px;
+  color: white;
+  z-index: 1;
+}
+.teamMember1 .shade {
+  background-image: linear-gradient(to bottom, #fff0 0%, #fff0 0%, #fff0 50%, rgb(0 0 0 / 0.75) 100%);
+  position: absolute;
+  height: 260px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.teamMember1:hover .shade {
+  display: none;
+}
+.teamMember1:hover .card {
+  display: none;
+}
+.teamMember1 {
+  transition: all 1s;
+  overflow: hidden;
+}
+.memberDetail {
+  transition: all 0.5s;
+  transform: translateX(260px);
+  height: 377px;
+  width: 255px;
+  padding: 50px 20px;
+  background-color: white;
+  text-align: center;
+  opacity: 0.8;
+}
+.teamMember1:hover .memberDetail {
+  transform: translateX(0);
+}
+
+/*  */
+/*  */
+/* tablet responsive */
+@media only screen and (max-width: 1023px) {
+  .propertyFeatured .swiper-button-prev:after,
   .swiper-button-next:after {
+    display: block;
+  }
+  .propertyFeatured .swiper .swiper-button-prev {
+    left: 88% !important;
+  }
+  .propertyFeatured .swiper .swiper-button-next {
+    left: 95% !important;
+  }
+  .memberDetail {
+    transform: translateX(352px);
+    height: 520px;
+    width: 352px;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobHeader {
+    position: absolute;
+    top: 76px;
+    background: white;
+    z-index: 2;
+    right: 0px;
+    padding: 20px;
+    height: 40vh;
+    border-top: 1px solid #a1a7a8;
+  }
+}
+/*  */
+/* mobile responsive */
+@media only screen and (max-width: 767px) {
+  .mainBanner .swiper-button-next:after,
+  .swiper-button-prev:after {
     display: none;
+  }
+  .propertyFeatured .swiper-button-prev:after,
+  .swiper-button-next:after {
+    display: block;
+  }
+  .propertyFeatured .swiper .swiper-button-prev {
+    left: 75% !important;
+  }
+  .propertyFeatured .swiper .swiper-button-next {
+    left: 89% !important;
+  }
+  .mobHeader {
+    position: absolute;
+    top: 76px;
+    background: white;
+    z-index: 2;
+    right: 0px;
+    padding: 20px;
+    height: 40vh;
+    border-top: 1px solid #a1a7a8;
+  }
+  .memberDetail {
+    transform: translateX(400px);
+    height: 497px;
+    width: 336px;
+    justify-content: center;
+    align-items: center;
   }
 }
 

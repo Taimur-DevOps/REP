@@ -22,7 +22,7 @@ const Footer = () => {
                   className="flex items-center space-x-3 rtl:space-x-reverse"
                 >
                   <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                    houzez
+                  REP
                   </span>
                 </a>
                 <p className="text-white text-sm leading-[25px] font-light py-5">
@@ -66,7 +66,7 @@ const Footer = () => {
                   </li>
                   <li className="flex gap-2 items-center text-white text-sm font-light leading-[25px]">
                     {" "}
-                    <AiOutlineMail /> houzez@email.com
+                    <AiOutlineMail /> REP@email.com
                   </li>
                 </ul>
               </div>
@@ -89,7 +89,7 @@ const Footer = () => {
             </span>
           </div>
           <div className="text-center text-sm leading-[25px] text-white font-light mt-5">
-            © Houzez - All rights reserved
+            © REP - All rights reserved
           </div>
         </div>
       </section>

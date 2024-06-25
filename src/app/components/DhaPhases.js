@@ -18,12 +18,12 @@ const DhaPhases = () => {
                 preserveAspectRatio="none"
                 overflow="visible"
                 height="15"
-                viewBox="0 0 20 16"
+                // viewBox="0 0 20 16"
                 fill="#fa8f8d"
                 stroke="#fa8f8d"
-                stroke-width="1"
-                stroke-linecap="square"
-                stroke-miterlimit="10"
+                strokeWidth="1"
+                strokeLinecap="square"
+                strokeMiterlimit="10"
               >
                 <g transform="translate(-12.000000, 0)">
                   <path d="M28,0L10,18" />
@@ -36,7 +36,7 @@ const DhaPhases = () => {
             <h2 className="text-4xl font-bold font-nokara leading-[1.5em]">
               Discover DHA Phases
             </h2>
-            <p className="text-base font-thin leading-7 mb-2">
+            <p className="text-base font-thin leading-7 lg:mb-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Vestibulum at fermentum felis. Phasellus eget vehicula sem.
             </p>
@@ -45,16 +45,16 @@ const DhaPhases = () => {
             </div>
           </div>
           <div className=" ">
-            <div className="flex lg:flex-row gap-10 flex-col">
-              <div className="1st-column relative flex flex-col gap-10">
-                <div className="lg:w-[265px] lg:h-[200px] w-[315px] h-[210px]  rounded-[4px]">
+            <div className="flex lg:flex-row md:flex-row lg:gap-10 md:gap-[1.5rem] gap-10 flex-col">
+              <div className="1st-column relative flex flex-col gap-10 lg:w-auto md:w-1/3">
+                <div className="lg:w-[265px] lg:h-[200px] w-[315px] h-[210px] md:w-full  rounded-[4px]">
                   {" "}
                   <Image
                     alt="phase1"
                     src={phase1}
                     className="rounded-[4px] w-full h-full"
                   />
-                  <div className="absolute top-0 rounded-[4px] lg:w-[265px] lg:h-[200px] w-[315px]  h-[210px]   bg-black opacity-[0.3] text-white flex justify-between flex-col p-8">
+                  <div className="absolute top-0 rounded-[4px] lg:w-[265px] lg:h-[200px]  w-[315px] h-[210px]  md:w-full  bg-black opacity-[0.3] text-white flex justify-between flex-col p-8">
                     <div className=" flex flex-col">
                       <span className="text-xs">13 Properties</span>
                       <span className="text-base">Fort</span>
@@ -62,14 +62,14 @@ const DhaPhases = () => {
                     <span className="text-base">More Details</span>
                   </div>
                 </div>
-                <div className="lg:w-[265px] lg:h-[250px] h-[270px] w-[315px] rounded-[4px]">
+                <div className="lg:w-[265px] lg:h-[250px]  h-[270px] w-[315px]  md:w-full  rounded-[4px]">
                   {" "}
                   <Image
                     alt="phase2"
                     src={phase2}
                     className="rounded-[4px]  w-full h-full"
                   />
-                  <div className="absolute bottom-0 rounded-[4px] lg:w-[265px] lg:h-[250px] w-[315px] h-[270px] bg-black opacity-[0.3] text-white flex justify-between flex-col p-8">
+                  <div className="absolute bottom-0 rounded-[4px] lg:w-[265px] lg:h-[250px]  md:w-full  w-[315px] h-[270px] bg-black opacity-[0.3] text-white flex justify-between flex-col p-8">
                     <div className=" flex flex-col">
                       <span className="text-xs">13 Properties</span>
                       <span className="text-base">Fort</span>
@@ -78,15 +78,15 @@ const DhaPhases = () => {
                   </div>
                 </div>
               </div>
-              <div className="2nd-column relative flex flex-col gap-10">
-                <div className="lg:w-[265px] lg:h-[250px] w-[315px] h-[270px] rounded-[4px]">
+              <div className="2nd-column relative flex flex-col gap-10 lg:w-auto md:w-1/3">
+                <div className="lg:w-[265px] lg:h-[250px] w-[315px] h-[270px]  md:w-full  rounded-[4px]">
                   {" "}
                   <Image
                     alt="phase2"
                     src={phase3}
                     className="rounded-[4px]  w-full h-full"
                   />
-                  <div className="absolute top-0 rounded-[4px] lg:w-[265px] lg:h-[250px] w-[315px] h-[270px] bg-black opacity-[0.3] text-white flex justify-between flex-col p-8">
+                  <div className="absolute top-0 rounded-[4px] lg:w-[265px] lg:h-[250px] w-[315px] h-[270px]  md:w-full  bg-black opacity-[0.3] text-white flex justify-between flex-col p-8">
                     <div className=" flex flex-col">
                       <span className="text-xs">13 Properties</span>
                       <span className="text-base">Fort</span>
@@ -94,14 +94,14 @@ const DhaPhases = () => {
                     <span className="text-base">More Details</span>
                   </div>
                 </div>
-                <div className="lg:w-[265px] lg:h-[200px]  w-[315px] h-[210px] rounded-[4px]">
+                <div className="lg:w-[265px] lg:h-[200px]  w-[315px] h-[210px]  md:w-full  rounded-[4px]">
                   {" "}
                   <Image
                     alt="phase1"
                     src={phase4}
                     className="rounded-[4px] w-full h-full"
                   />
-                  <div className="absolute bottom-0 rounded-[4px] lg:w-[265px] lg:h-[200px]  w-[315px] h-[210px]  bg-black opacity-[0.3] text-white flex justify-between flex-col p-8">
+                  <div className="absolute bottom-0 rounded-[4px] lg:w-[265px] lg:h-[200px]  md:w-full  w-[315px] h-[210px]  bg-black opacity-[0.3] text-white flex justify-between flex-col p-8">
                     <div className=" flex flex-col">
                       <span className="text-xs">13 Properties</span>
                       <span className="text-base">Fort</span>
@@ -110,15 +110,15 @@ const DhaPhases = () => {
                   </div>
                 </div>
               </div>
-              <div className="3rd-column relative flex flex-col gap-10">
-                <div className="lg:w-[265px] lg:h-[200px]  w-[315px] h-[210px] rounded-[4px]">
+              <div className="3rd-column relative flex flex-col gap-10 lg:w-auto md:w-1/3">
+                <div className="lg:w-[265px] lg:h-[200px]  md:w-full  w-[315px] h-[210px] rounded-[4px]">
                   {" "}
                   <Image
                     alt="phase1"
                     src={phase1}
                     className="rounded-[4px] w-full h-full"
                   />
-                  <div className="absolute top-0 rounded-[4px] lg:w-[265px] lg:h-[200px]  w-[315px] h-[210px] bg-black opacity-[0.3] text-white flex justify-between flex-col p-8">
+                  <div className="absolute top-0 rounded-[4px] lg:w-[265px] lg:h-[200px]  md:w-full  w-[315px] h-[210px] bg-black opacity-[0.3] text-white flex justify-between flex-col p-8">
                     <div className=" flex flex-col">
                       <span className="text-xs">13 Properties</span>
                       <span className="text-base">Fort</span>
@@ -126,14 +126,14 @@ const DhaPhases = () => {
                     <span className="text-base">More Details</span>
                   </div>
                 </div>
-                <div className="lg:w-[265px] lg:h-[250px]  w-[315px] h-[270px] rounded-[4px]">
+                <div className="lg:w-[265px] lg:h-[250px]  md:w-full  w-[315px] h-[270px] rounded-[4px]">
                   {" "}
                   <Image
                     alt="phase2"
                     src={phase2}
                     className="rounded-[4px]  w-full h-full"
                   />
-                  <div className="absolute bottom-0 rounded-[4px] lg:w-[265px] lg:h-[250px] w-[315px] h-[270px]  bg-black opacity-[0.3] text-white flex justify-between flex-col p-8">
+                  <div className="absolute bottom-0 rounded-[4px] lg:w-[265px] lg:h-[250px]  md:w-full  w-[315px] h-[270px]  bg-black opacity-[0.3] text-white flex justify-between flex-col p-8">
                     <div className=" flex flex-col">
                       <span className="text-xs">13 Properties</span>
                       <span className="text-base">Fort</span>
