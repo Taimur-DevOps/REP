@@ -52,7 +52,7 @@ const Banner = () => {
           clickable: true,
         }}
         modules={[Navigation]}
-        className="mySwiper mainBanner"
+        className="mySwiper"
       >
         {banner.map((item, index) => {
           const { img } = item;

@@ -34,45 +34,53 @@ const Gallery = () => {
       spaceBetween: 20,
     },
     1024: {
-      slidesPerView: 1,
-      spaceBetween: 20,
+      slidesPerView: 3,
+      slidesPerGroup: 1,
+      centeredSlides: false,
+      loop: true,
+      slideToClickedSlide: true,
+      spaceBetween: 1,
     },
   };
   return (
     <>
-      <div className="">
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={16}
-          breakpoints={breakpoints}
-          navigation
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Navigation]}
-          className="mySwiper mainBanner"
-        >
-          {gallery.map((item, index) => {
-            const { img } = item;
-            return (
-              // eslint-disable-next-line react/jsx-key
-              <SwiperSlide key={index}>
-                <div className="lg:h-[600px] h-[380px] flex justify-center items-center relative ">
-                  <Image
-                    alt="hero section slider"
-                    src={img}
-                    className="w-full lg:h-auto object-cover h-[600px]"
-                  />
-                  <div className="gallery">
-                    <SlPicture className="w-4 h-4" />{" "}
-                    <span className="text-sm font-light">1/5</span>
-                  </div>
-                </div>
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-      </div>
+      <main className="overflow-x-hidden">
+        <div className="lg:ml-[-40%] lg:mr-[-40%]">
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={16}
+            breakpoints={breakpoints}
+            navigation
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Navigation]}
+            className="mySwiper mainBanner relative"
+          >
+            {gallery.map((item, index) => {
+              const { img } = item;
+              return (
+                <>
+                  // eslint-disable-next-line react/jsx-key
+                  <SwiperSlide key={index} className="picture">
+                    <div className="lg:h-[600px] h-[380px] flex justify-center items-center">
+                      <Image
+                        alt="hero section slider"
+                        src={img}
+                        className="w-full object-cover lg:h-[600px]  h-full"
+                      />
+                    </div>
+                  </SwiperSlide>
+                </>
+              );
+            })}
+            <div className="gallery">
+              <SlPicture className="w-4 h-4" />{" "}
+              <span className="text-sm font-light">1/5</span>
+            </div>
+          </Swiper>
+        </div>
+      </main>
     </>
   );
 };

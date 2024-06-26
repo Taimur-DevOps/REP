@@ -54,11 +54,11 @@
 .swiper-button-prev {
   left: 30px !important;
 }
+.swiper-button-next {
+  right: 30px !important;
+}
 .swiper-button-next.swiper-button-disabled {
   opacity: 1 !important;
-}
-.swiper-button-next {
-  right: 10px !important;
 }
 
 .footerIcons:hover {
@@ -155,9 +155,10 @@ button {
   color: white;
   border-radius: 4px;
   bottom: 90%;
-  right: 55px;
+  right: 24%;
   padding: 10px;
   background: #fa8f8da8;
+  z-index: 2;
 }
 .subImgsNavigation .swiper-pagination-bullet {
   width: 10px !important;
@@ -166,10 +167,23 @@ button {
 .subImgsNavigation .swiper-pagination-bullet-active {
   background: #fa8f8d !important;
 }
+.picture {
+  width: 900px !important;
+}
+.mainBanner .swiper-button-prev {
+  left: 24% !important;
+}
+.mainBanner .swiper-button-next {
+  right: 24% !important;
+}
 /*  */
 /*  */
 /* tablet responsive */
 @media only screen and (max-width: 1024px) {
+  .mySwiper .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: none;
+  }
   .propertyFeatured .swiper-button-prev:after,
   .swiper-button-next:after {
     display: block;
@@ -206,6 +220,13 @@ button {
     padding: 6px;
     color: white;
     border-radius: 4px;
+  }
+  .picture {
+    width: 100% !important;
+  }
+  .mainBanner .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: none;
   }
 }
 /*  */
