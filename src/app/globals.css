@@ -91,7 +91,9 @@ select,
 button {
   height: 38px !important;
 }
-
+select {
+  appearance: none;
+}
 .contactBanner {
   background-image: url("../assets/contactBanner.jpeg");
   background-repeat: no-repeat;
