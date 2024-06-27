@@ -51,10 +51,10 @@
 .swiper-button-prev.swiper-button-disabled {
   opacity: 1 !important;
 }
-.swiper-button-prev {
+.mySwiper .swiper-button-prev {
   left: 30px !important;
 }
-.swiper-button-next {
+.mySwiper .swiper-button-next {
   right: 30px !important;
 }
 .swiper-button-next.swiper-button-disabled {
@@ -70,10 +70,12 @@
 }
 .propertyFeatured .featureSwiper .swiper-button-next {
   top: 28px !important;
+  right: 10px !important;
 }
 .propertyFeatured .featureSwiper .swiper-button-prev {
   top: 28px !important;
-  left: 92.5% !important;
+  right: 56px !important;
+  left: auto !important;
 }
 .propertyFeatured .featureSwiper .swiper-button-next:after {
   content: "next" !important;
@@ -189,10 +191,8 @@ button {
     display: block;
   }
   .propertyFeatured .featureSwiper .swiper-button-prev {
-    left: 88% !important;
   }
   .propertyFeatured .featureSwiper .swiper-button-next {
-    left: 95% !important;
   }
   .memberDetail {
     justify-content: center;
@@ -241,10 +241,8 @@ button {
     display: block;
   }
   .propertyFeatured .featureSwiper .swiper-button-prev {
-    left: 75% !important;
   }
   .propertyFeatured .featureSwiper .swiper-button-next {
-    left: 89% !important;
   }
   .mobHeader {
     position: absolute;

@@ -45,7 +45,7 @@ const KeepInTouch = () => {
                   type="text"
                   id="firstName"
                   name="firstName"
-                  className="block w-full placeholder:text-lightBlack placeholder:font-light border border-gray-300  bg-white px-[10px] py-1 text-sm text-BlackPrimary lg:text-base"
+                  className="block w-full placeholder:text-lightBlack placeholder:font-light border border-gray-300  bg-white px-[10px] py-1 text-sm text-BlackPrimary lg:text-base rounded-[4px]"
                 />
 
                 <input
@@ -53,7 +53,7 @@ const KeepInTouch = () => {
                   type="text"
                   id="lastName"
                   name="lastName"
-                  className="block w-full placeholder:text-lightBlack placeholder:font-light border border-gray-300  bg-white px-[10px] py-1 text-sm text-BlackPrimary lg:text-base"
+                  className="block w-full placeholder:text-lightBlack placeholder:font-light border border-gray-300  bg-white px-[10px] py-1 text-sm text-BlackPrimary lg:text-base rounded-[4px]"
                 />
               </div>
               <input
@@ -61,19 +61,19 @@ const KeepInTouch = () => {
                 type="email"
                 id="firstName"
                 name="firstName"
-                className="block w-full placeholder:text-lightBlack placeholder:font-light border border-gray-300  bg-white px-[10px] py-1 text-sm text-BlackPrimary lg:text-base"
+                className="block w-full placeholder:text-lightBlack placeholder:font-light border border-gray-300  bg-white px-[10px] py-1 text-sm text-BlackPrimary lg:text-base rounded-[4px]"
               />
               <input
                 placeholder="Phone"
                 type="number"
                 id="firstName"
                 name="firstName"
-                className="block w-full placeholder:text-lightBlack placeholder:font-light border border-gray-300  bg-white px-[10px] py-1 text-sm text-BlackPrimary lg:text-base"
+                className="block w-full placeholder:text-lightBlack placeholder:font-light border border-gray-300  bg-white px-[10px] py-1 text-sm text-BlackPrimary lg:text-base rounded-[4px]"
               />
               <textarea
                 id="message"
                 rows="4"
-                className="block w-full placeholder:text-lightBlack placeholder:font-light border border-gray-300  bg-white px-[10px] py-1 text-sm text-BlackPrimary lg:text-base"
+                className="block w-full placeholder:text-lightBlack placeholder:font-light border border-gray-300  bg-white px-[10px] py-1 text-sm text-BlackPrimary lg:text-base rounded-[4px]"
                 placeholder="Message"
               ></textarea>
               <Button variant="primary" text="Submit" />
