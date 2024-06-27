@@ -71,7 +71,7 @@ const DetailPage = () => {
           {/* description about property */}
           <section className="pt-10">
             <div className="flex bg-white">
-              <div className="tab flex flex-col items-center lg:w-[10%] md:w-[10%]">
+              <div className="tab flex flex-col items-center lg:w-[10%] md:w-[10%] w-[20%]">
                 <div
                   className={`tablinks block w-full p-4 text-lg transition duration-300 ${
                     activeTab === "folder" ? "bg-gray-300" : "hover:bg-gray-200"
@@ -111,7 +111,7 @@ const DetailPage = () => {
                 </div>
               </div>
 
-              <div className="tabcontent lg:w-[95%] md:w-[95%] py-4 lg:px-7 px-5">
+              <div className="tabcontent lg:w-[95%] md:w-[95%] w-[80%] py-4 lg:px-7 px-5">
                 {activeTab === "folder" && (
                   <div id="folder" className="pb-8">
                     <h3 className="text-xl font-bold mt-5 mb-8">Description</h3>

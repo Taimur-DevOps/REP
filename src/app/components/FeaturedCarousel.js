@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import { Pagination } from "swiper/modules";
 import Image from "next/image";
 import crsl1 from "@/assets/crsl1.jpg";
@@ -123,7 +123,11 @@ const FeaturedCarousel = () => {
             pagination={{
               clickable: true,
             }}
-            modules={[Navigation]}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            modules={[Navigation, Autoplay]}
             className="featureSwiper"
           >
             {featured.map((item, index) => {
@@ -140,7 +144,7 @@ const FeaturedCarousel = () => {
               return (
                 // eslint-disable-next-line react/jsx-key
                 <SwiperSlide key={index} className="">
-                  <div className=" rounded-[4px] bg-white shadow-sm relative">
+                  <div className=" rounded-[4px] bg-white shadow-md relative">
                     <Swiper
                       pagination={true}
                       modules={[Pagination]}
