@@ -91,7 +91,9 @@ select,
 button {
   height: 38px !important;
 }
-
+select {
+  appearance: none;
+}
 .contactBanner {
   background-image: url("../assets/contactBanner.jpeg");
   background-repeat: no-repeat;
@@ -169,6 +171,11 @@ button {
 .subImgsNavigation .swiper-pagination-bullet-active {
   background: #fa8f8d !important;
 }
+.galleryNavigation .swiper-pagination-bullet {
+  width: 0 !important;
+  height: 0 !important;
+}
+
 .picture {
   width: 900px !important;
 }
@@ -178,6 +185,7 @@ button {
 .mainBanner .swiper-button-next {
   right: 24% !important;
 }
+
 /*  */
 /*  */
 /* tablet responsive */
@@ -190,10 +198,7 @@ button {
   .swiper-button-next:after {
     display: block;
   }
-  .propertyFeatured .featureSwiper .swiper-button-prev {
-  }
-  .propertyFeatured .featureSwiper .swiper-button-next {
-  }
+
   .memberDetail {
     justify-content: center;
     align-items: center;
@@ -228,6 +233,16 @@ button {
   .swiper-button-prev:after {
     display: none;
   }
+  .galleryNavigation .swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    background: white !important;
+    opacity: 0.7 !important;
+  }
+  .galleryNavigation .swiper-pagination-bullet-active {
+    background: #fa8f8d !important;
+    opacity: 0.9 !important;
+  }
 }
 /*  */
 /* mobile responsive */
@@ -240,10 +255,7 @@ button {
   .swiper-button-next:after {
     display: block;
   }
-  .propertyFeatured .featureSwiper .swiper-button-prev {
-  }
-  .propertyFeatured .featureSwiper .swiper-button-next {
-  }
+
   .mobHeader {
     position: absolute;
     top: 76px;
@@ -258,6 +270,15 @@ button {
     justify-content: center;
     align-items: center;
   }
+  /* .galleryNavigation .swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    background: white !important;
+    opacity: 0.7 !important;
+  }
+  .galleryNavigation .swiper-pagination-bullet-active {
+    background: #fa8f8d !important;
+  } */
 }
 
 .navbar {

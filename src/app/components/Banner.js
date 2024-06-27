@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import img1 from "@/assets/bnr1.jpg";
 import img2 from "@/assets/bnr2.jpg";
 import img3 from "@/assets/bnr3.jpg";
@@ -51,7 +51,11 @@ const Banner = () => {
         pagination={{
           clickable: true,
         }}
-        modules={[Navigation]}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[Navigation, Autoplay]}
         className="mySwiper"
       >
         {banner.map((item, index) => {

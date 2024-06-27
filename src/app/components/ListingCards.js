@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import crsl1 from "@/assets/crsl1.jpg";
 import crsl2 from "@/assets/crsl2.jpg";
@@ -8,6 +9,11 @@ import { PiShowerLight } from "react-icons/pi";
 import { TfiRulerAlt2 } from "react-icons/tfi";
 import Image from "next/image";
 import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Pagination } from "swiper/modules";
 
 const featured = [
   {
@@ -132,6 +138,17 @@ const featured = [
     meter: "3410",
   },
 ];
+const subImages = [
+  {
+    img: crsl4,
+  },
+  {
+    img: crsl2,
+  },
+  {
+    img: crsl1,
+  },
+];
 
 const ListingCards = () => {
   return (
@@ -153,12 +170,26 @@ const ListingCards = () => {
             // eslint-disable-next-line react/jsx-key
             <div key={index}>
               <Link href="/properties/12">
-                <div className=" rounded-[4px] bg-white shadow-sm relative">
-                  <Image
-                    alt="tesla"
-                    src={img}
-                    className="w-full rounded-t-[4px]"
-                  />
+                <div className=" rounded-[4px] bg-white shadow-md relative">
+                  <Swiper
+                    pagination={true}
+                    modules={[Pagination]}
+                    className="subImgsNavigation"
+                  >
+                    {subImages.map((item, index) => {
+                      const { img } = item;
+                      return (
+                        <SwiperSlide key={index}>
+                          <Image
+                            alt="tesla"
+                            src={img}
+                            className="w-full rounded-t-[4px]"
+                          />
+                        </SwiperSlide>
+                      );
+                    })}
+                  </Swiper>
+
                   <div className="flex gap-2 flex-col p-5">
                     <h4 className="text-base font-bold">{title}</h4>
                     <div className="flex justify-between items-center">
