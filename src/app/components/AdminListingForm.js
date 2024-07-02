@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import Button from "./Button";
 import { HiOutlineChevronDown } from "react-icons/hi";
+import { MdOutlineFileUpload } from "react-icons/md";
 
 const AdminListingForm = () => {
   const [formData, setFormData] = useState({
@@ -134,7 +134,7 @@ const AdminListingForm = () => {
               name="description"
               value={formData.description}
               onChange={handleChange}
-              className=" w-full  border border-gray-300 rounded-[4px]"
+              className=" w-full px-2 border border-gray-300 rounded-[4px]"
             />
           </div>
         </div>
@@ -281,32 +281,11 @@ const AdminListingForm = () => {
             <button
               type="button"
               onClick={addFeature}
-              className="py-2 px-4 bg-slate-700 text-white rounded-[4px]"
+              className="py-2 px-4 bg-bg text-white rounded-[4px]"
             >
               Add Feature
             </button>
           </div>
-        </div>
-
-        {/* Upload Images */}
-        <div className="flex flex-col gap-1">
-          <div className="text-base font-medium text-gray-700">Images</div>
-          <input
-            type="file"
-            name="images"
-            multiple
-            onChange={handleChange}
-            className="w-[30%] border-gray-300 rounded-[4px]"
-          />
-          {formData.images.length > 0 && (
-            <div className="mt-2 border rounded-[4px] p-2 w-64">
-              {formData.images.map((file, index) => (
-                <div key={index} className="flex items-center space-x-2">
-                  <span>{file.name}</span>
-                </div>
-              ))}
-            </div>
-          )}
         </div>
 
         {/* feature property */}
@@ -321,6 +300,32 @@ const AdminListingForm = () => {
           <span className=" text-sm font-medium text-gray-700 whitespace-nowrap">
             Featured Property
           </span>
+        </div>
+
+        {/* Upload Images */}
+        <div className="flex flex-col gap-1">
+          <label class="flex bg-bg gap-2 text-white items-center justify-center rounded-[50px] w-[15%]">
+            <MdOutlineFileUpload />
+            <span class=" text-base">Select a file</span>
+            <input
+              type="file"
+              class="hidden"
+              name="images"
+              placeholder="Select a file"
+              multiple
+              onChange={handleChange}
+              className="hidden"
+            />
+          </label>
+          {formData.images.length > 0 && (
+            <div className="mt-2 border rounded-[4px] p-2">
+              {formData.images.map((file, index) => (
+                <div key={index} className="flex items-center space-x-2">
+                  <span className="truncate">{file.name}</span>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </main>
 
