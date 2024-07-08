@@ -7,7 +7,9 @@ function App() {
 
   return (
     <nav className="lg:container mx-auto flex justify-between items-center lg:py-[30px] py-5 lg:px-0 px-4">
+
       <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+
         <span className="self-center text-2xl font-semibold whitespace-nowrap">
           REP
         </span>
