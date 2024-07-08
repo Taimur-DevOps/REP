@@ -5,7 +5,7 @@ import { MdOutlineFileUpload } from "react-icons/md";
 const HeroFormAdmin = () => {
   const [formData, setFormData] = useState({
     title: "",
-    description: "",
+    // description: "",
     location: "",
     price: "",
     images: [],
@@ -38,7 +38,7 @@ const HeroFormAdmin = () => {
     <>
       <form
         onSubmit={handleSubmit}
-        className=" border border-gray-300 rounded-[4px] bg-white px-6 py-7"
+        className=" border border-gray-300 rounded-[4px] bg-white px-6 py-7 rounded-lg"
       >
         {/* property Id and Title */}
         <main className="flex flex-col gap-3">
@@ -52,7 +52,7 @@ const HeroFormAdmin = () => {
               className="w-full  px-2 border border-gray-300 rounded-[4px]"
             />
           </div>
-          <div className="">
+          {/* <div className="">
             <label className=" text-sm font-medium text-gray-700">
               Description
             </label>
@@ -62,7 +62,7 @@ const HeroFormAdmin = () => {
               onChange={handleChange}
               className=" w-full px-2 border border-gray-300 rounded-[4px]"
             />
-          </div>
+          </div> */}
           <div className="">
             <label className=" text-sm font-medium text-gray-700">
               Location
