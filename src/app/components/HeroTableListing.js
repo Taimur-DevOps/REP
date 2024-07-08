@@ -16,16 +16,20 @@ const HeroTableListing = () => {
                 Title
               </th>
               <th scope="col" class="px-6 py-3">
-                Price
+              Location
               </th>
               <th scope="col" class="px-6 py-3">
-                Beds
+              Size
+              </th>
+              <th scope="col" class="px-6 py-3">
+              Price
+              </th>
+       
+              <th scope="col" class="px-6 py-3">
+              Bedrooms
               </th>
               <th scope="col" class="px-6 py-3">
                 Bathroom
-              </th>
-              <th scope="col" class="px-6 py-3">
-                Area size
               </th>
               <th scope="col" class="px-6 py-3">
                 Images
@@ -38,11 +42,36 @@ const HeroTableListing = () => {
           <tbody>
             <tr class="odd:bg-white  even:bg-gray-50 text-gray-900  w-full">
               <th scope="row" class="px-6 font-medium whitespace-nowrap">
-                P8-207
+                Spanish Style
               </th>
-              <td class="px-6">C</td>
-              <td class="px-6">8</td>
-              <td class="px-6">10 Marla</td>
+              <td class="px-6 whitespace-nowrap">Dha phase 8</td>
+              <td class="px-6 whitespace-nowrap">1 kanal</td>
+              <td class="px-6 whitespace-nowrap">18 Cr</td>
+              <td class="px-6 whitespace-nowrap">5</td>
+              <td class="px-6 whitespace-nowrap">4</td>
+              <td class="px-6 whitespace-nowrap">
+                <div className="w-14 h-12 grid place-content-center">
+                  <Image
+                    alt="banner"
+                    src={crsl1}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </td>
+              <td class="px-6">
+                {" "}
+                <RiDeleteBin7Line className="h-5 w-5 text-red-500  hover:cursor-pointer" />
+              </td>
+            </tr>
+ 
+            <tr class="odd:bg-white  even:bg-gray-50 text-gray-900  w-full">
+              <th scope="row" class="px-6 font-medium whitespace-nowrap">
+                Spanish Style
+              </th>
+              <td class="px-6">Dha phase 8</td>
+              <td class="px-6">1 kanal</td>
+              <td class="px-6">18 Cr</td>
+              <td class="px-6">5</td>
               <td class="px-6">4</td>
               <td class="px-6">
                 <div className="w-14 h-12 grid place-content-center">
@@ -58,36 +87,16 @@ const HeroTableListing = () => {
                 <RiDeleteBin7Line className="h-5 w-5 text-red-500  hover:cursor-pointer" />
               </td>
             </tr>
-            <tr class="odd:bg-white  even:bg-gray-50 text-gray-900  ">
-              <th scope="row" class="px-6  font-medium whitespace-nowrap">
-                P8-207
+
+            <tr class="odd:bg-white  even:bg-gray-50 text-gray-900  w-full">
+              <th scope="row" class="px-6 font-medium whitespace-nowrap">
+                Spanish Style
               </th>
-              <td class="px-6 ">C</td>
-              <td class="px-6 ">8</td>
-              <td class="px-6 ">10 Marla</td>
-              <td class="px-6 ">4</td>
-              <td class="px-6 ">
-                <div className="w-14 h-12 grid place-content-center">
-                  <Image
-                    alt="banner"
-                    src={crsl1}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </td>
-              <td class="px-6">
-                {" "}
-                <RiDeleteBin7Line className="h-5 w-5 text-red-500  hover:cursor-pointer" />
-              </td>
-            </tr>
-            <tr class="odd:bg-white  even:bg-gray-50 text-gray-900  ">
-              <th scope="row" class="px-6  font-medium whitespace-nowrap">
-                P8-207
-              </th>
-              <td class="px-6 ">C</td>
-              <td class="px-6 ">8</td>
-              <td class="px-6 ">10 Marla</td>
-              <td class="px-6 ">4</td>
+              <td class="px-6">Dha phase 8</td>
+              <td class="px-6">1 kanal</td>
+              <td class="px-6">18 Cr</td>
+              <td class="px-6">5</td>
+              <td class="px-6">4</td>
               <td class="px-6">
                 <div className="w-14 h-12 grid place-content-center">
                   <Image
@@ -102,168 +111,16 @@ const HeroTableListing = () => {
                 <RiDeleteBin7Line className="h-5 w-5 text-red-500  hover:cursor-pointer" />
               </td>
             </tr>
-            <tr class="odd:bg-white  even:bg-gray-50 text-gray-900  ">
-              <th scope="row" class="px-6  font-medium whitespace-nowrap">
-                P8-207
+
+            <tr class="odd:bg-white  even:bg-gray-50 text-gray-900  w-full">
+              <th scope="row" class="px-6 font-medium whitespace-nowrap">
+                Spanish Style
               </th>
-              <td class="px-6 ">C</td>
-              <td class="px-6 ">8</td>
-              <td class="px-6 ">10 Marla</td>
-              <td class="px-6 ">4</td>
-              <td class="px-6">
-                <div className="w-14 h-12 grid place-content-center">
-                  <Image
-                    alt="banner"
-                    src={crsl1}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </td>
-              <td class="px-6">
-                {" "}
-                <RiDeleteBin7Line className="h-5 w-5 text-red-500  hover:cursor-pointer" />
-              </td>
-            </tr>
-            <tr class="odd:bg-white  even:bg-gray-50 text-gray-900  ">
-              <th scope="row" class="px-6  font-medium whitespace-nowrap">
-                P8-207
-              </th>
-              <td class="px-6 ">C</td>
-              <td class="px-6 ">8</td>
-              <td class="px-6 ">10 Marla</td>
-              <td class="px-6 ">4</td>
-              <td class="px-6">
-                <div className="w-14 h-12 grid place-content-center">
-                  <Image
-                    alt="banner"
-                    src={crsl1}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </td>
-              <td class="px-6">
-                {" "}
-                <RiDeleteBin7Line className="h-5 w-5 text-red-500  hover:cursor-pointer" />
-              </td>
-            </tr>
-            <tr class="odd:bg-white  even:bg-gray-50 text-gray-900  ">
-              <th scope="row" class="px-6  font-medium whitespace-nowrap">
-                P8-207
-              </th>
-              <td class="px-6 ">C</td>
-              <td class="px-6 ">8</td>
-              <td class="px-6 ">10 Marla</td>
-              <td class="px-6 ">4</td>
-              <td class="px-6">
-                <div className="w-14 h-12 grid place-content-center">
-                  <Image
-                    alt="banner"
-                    src={crsl1}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </td>
-              <td class="px-6">
-                {" "}
-                <RiDeleteBin7Line className="h-5 w-5 text-red-500  hover:cursor-pointer" />
-              </td>
-            </tr>
-            <tr class="odd:bg-white  even:bg-gray-50 text-gray-900  ">
-              <th scope="row" class="px-6  font-medium whitespace-nowrap">
-                P8-207
-              </th>
-              <td class="px-6 ">C</td>
-              <td class="px-6 ">8</td>
-              <td class="px-6 ">10 Marla</td>
-              <td class="px-6 ">4</td>
-              <td class="px-6">
-                <div className="w-14 h-12 grid place-content-center">
-                  <Image
-                    alt="banner"
-                    src={crsl1}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </td>
-              <td class="px-6">
-                {" "}
-                <RiDeleteBin7Line className="h-5 w-5 text-red-500  hover:cursor-pointer" />
-              </td>
-            </tr>
-            <tr class="odd:bg-white  even:bg-gray-50 text-gray-900  ">
-              <th scope="row" class="px-6  font-medium whitespace-nowrap">
-                P8-207
-              </th>
-              <td class="px-6 ">C</td>
-              <td class="px-6 ">8</td>
-              <td class="px-6 ">10 Marla</td>
-              <td class="px-6 ">4</td>
-              <td class="px-6">
-                <div className="w-14 h-12 grid place-content-center">
-                  <Image
-                    alt="banner"
-                    src={crsl1}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </td>
-              <td class="px-6">
-                {" "}
-                <RiDeleteBin7Line className="h-5 w-5 text-red-500  hover:cursor-pointer" />
-              </td>
-            </tr>
-            <tr class="odd:bg-white  even:bg-gray-50 text-gray-900  ">
-              <th scope="row" class="px-6  font-medium whitespace-nowrap">
-                P8-207
-              </th>
-              <td class="px-6 ">C</td>
-              <td class="px-6 ">8</td>
-              <td class="px-6 ">10 Marla</td>
-              <td class="px-6 ">4</td>
-              <td class="px-6">
-                <div className="w-14 h-12 grid place-content-center">
-                  <Image
-                    alt="banner"
-                    src={crsl1}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </td>
-              <td class="px-6">
-                {" "}
-                <RiDeleteBin7Line className="h-5 w-5 text-red-500  hover:cursor-pointer" />
-              </td>
-            </tr>
-            <tr class="odd:bg-white  even:bg-gray-50 text-gray-900  ">
-              <th scope="row" class="px-6  font-medium whitespace-nowrap">
-                P8-207
-              </th>
-              <td class="px-6 ">C</td>
-              <td class="px-6 ">8</td>
-              <td class="px-6 ">10 Marla</td>
-              <td class="px-6 ">4</td>
-              <td class="px-6">
-                <div className="w-14 h-12 grid place-content-center">
-                  <Image
-                    alt="banner"
-                    src={crsl1}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </td>
-              <td class="px-6">
-                {" "}
-                <RiDeleteBin7Line className="h-5 w-5 text-red-500  hover:cursor-pointer" />
-              </td>
-            </tr>
-            <tr class="odd:bg-white  even:bg-gray-50 text-gray-900  ">
-              <th scope="row" class="px-6  font-medium whitespace-nowrap">
-                P8-207
-              </th>
-              <td class="px-6 ">C</td>
-              <td class="px-6 ">8</td>
-              <td class="px-6 ">10 Marla</td>
-              <td class="px-6 ">4</td>
+              <td class="px-6">Dha phase 8</td>
+              <td class="px-6">1 kanal</td>
+              <td class="px-6">18 Cr</td>
+              <td class="px-6">5</td>
+              <td class="px-6">4</td>
               <td class="px-6">
                 <div className="w-14 h-12 grid place-content-center">
                   <Image
