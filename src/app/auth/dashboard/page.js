@@ -4,7 +4,7 @@ import Settings from "@/app/components/Settings";
 import TableListing from "@/app/components/TableListing";
 import React, { useState } from "react";
 
-const dashboard = () => {
+const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("create");
 
   const openPage = (pageName) => {
@@ -107,4 +107,4 @@ const dashboard = () => {
   );
 };
 
-export default dashboard;
+export default Dashboard;

@@ -7,15 +7,15 @@ import Pagination from "../components/Pagination";
 import Breadcrumb from "../components/Breadcrumb";
 import SkeletonCard from "../components/SkeletonCard";
 
-const properties = () => {
+const Properties = () => {
   const [loading, setLoading] = useState(false);
 
-  // Load this effect on mount
+  // Load this effect on mount  
   useEffect(() => {
     setLoading(true);
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 100);
     // Cancel the timer while unmounting
     return () => clearTimeout(timer);
   }, []);
@@ -43,4 +43,4 @@ const properties = () => {
   );
 };
 
-export default properties;
+export default Properties;

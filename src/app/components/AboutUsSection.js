@@ -2,6 +2,7 @@ import React from "react";
 import Button from "./Button";
 import Image from "next/image";
 import aboutImg from "@/assets/aboutUs.jpeg";
+import Link from "next/link";
 
 const AboutUsSection = () => {
   return (
@@ -31,7 +32,9 @@ const AboutUsSection = () => {
                 a, pharetra ultricies sem
               </p>
               <div>
+                <Link href="/about">
                 <Button text="About Us" variant="primary" />
+                </Link>
               </div>
             </div>
           </div>

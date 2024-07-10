@@ -1,9 +1,7 @@
 import React from 'react'
-import AdminListingForm from '../components/AdminListingForm'
-import Link from 'next/link'
 import SignIn from '../components/SignIn'
 
-const page = () => {
+const Auth = () => {
   return (
     <>
       <SignIn />
@@ -11,4 +9,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Auth;

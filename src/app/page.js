@@ -20,11 +20,11 @@ export default function Home() {
     <>
       <Banner />
       <Filters />
-      <AboutUsSection />
-      <DhaPhases />
-      <Services />
-      <Categories />
       <FeaturedCarousel />
+      <Categories />
+      <Services />
+      <DhaPhases />
+      <AboutUsSection />
       <KeepInTouch />
     </>
   );

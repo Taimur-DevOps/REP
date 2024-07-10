@@ -6,6 +6,7 @@ import phase2 from "@/assets/phase2.jpg";
 import phase3 from "@/assets/phase3.jpg";
 import phase4 from "@/assets/phase4.jpg";
 import { PiPlayLight } from "react-icons/pi";
+import Link from "next/link";
 
 const Categories = () => {
   return (
@@ -35,14 +36,16 @@ const Categories = () => {
               </svg>
             </span>
             <h2 className="text-4xl font-bold font-nokara leading-[1.5em]">
-              Explore New Lifestyles
+              Explore All Categories
             </h2>
             <p className="text-base font-thin leading-7 mb-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Vestibulum at fermentum felis. Phasellus eget vehicula sem.
             </p>
             <div>
-              <Button text="Discover" variant="primary" />
+              <Link href={"/properties"}>
+                <Button text="Discover" variant="primary" />
+              </Link>
             </div>
           </div>
           <div className="lg:w-[63%]">
