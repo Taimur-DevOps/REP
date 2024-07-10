@@ -37,8 +37,17 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 
 
+IF EXISTS
+cd ~/.ssh
+ls
+rm -rf id_rsa (fileName)
+rm -rf id_rsa.pub (filname)
 
-
+GENERATE NEW
+ssh-keygen
+cd ~/.ssh
+ls
+cat id_rsa.pub
 
 
 
