@@ -5,7 +5,6 @@ import img1 from "@/assets/bnr1.jpg";
 import img2 from "@/assets/bnr2.jpg";
 import img3 from "@/assets/bnr3.jpg";
 import img4 from "@/assets/bnr4.jpg";
-import { SlPicture } from "react-icons/sl";
 import { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";

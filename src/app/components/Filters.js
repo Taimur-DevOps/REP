@@ -2,7 +2,6 @@
 
 import React from "react";
 import Button from "./Button";
-import { HiChevronUpDown } from "react-icons/hi2";
 import { CiSearch } from "react-icons/ci";
 import FilterDropdown from "./FilterDropdown";
 

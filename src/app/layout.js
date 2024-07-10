@@ -1,5 +1,4 @@
 import { Inter } from "next/font/google";
-import Link from "next/link";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import inter from "./globals.css";

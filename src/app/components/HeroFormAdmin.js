@@ -115,12 +115,11 @@ const HeroFormAdmin = () => {
           </div>
           {/* Upload Images */}
           <div className="flex flex-col gap-1 mt-2">
-            <label class="flex bg-bg gap-2 text-white items-center justify-center rounded-[50px] w-[50%]">
+            <label className="flex bg-bg gap-2 text-white items-center justify-center rounded-[50px] w-[50%]">
               <MdOutlineFileUpload />
-              <span class=" text-base">Select a file</span>
+              <span className=" text-base">Select a file</span>
               <input
                 type="file"
-                class="hidden"
                 name="images"
                 placeholder="Select a file"
                 multiple
