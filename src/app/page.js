@@ -7,10 +7,11 @@ import Services from "./components/Services";
 import Categories from "./components/Categories";
 import KeepInTouch from "./components/KeepInTouch";
 import FeaturedCarousel from "./components/FeaturedCarousel";
-
+// import Req from "./request/req";
 export default function Home() {
   return (
     <>
+    {/* <Req/> */}
       <Banner />
       <Filters />
       <FeaturedCarousel />

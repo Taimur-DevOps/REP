@@ -3,9 +3,15 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import Button from "./Button";
+import { useDispatch, useSelector } from 'react-redux';
 import { HiOutlineChevronDown } from "react-icons/hi";
+import { createProperty } from "../properties/_redux/jobActions";
 
 const AdminListingForm = () => {
+  const dispatch = useDispatch();
+  // const count = useSelector((state) => state.counter.count);
+
+
   const formik = useFormik({
     initialValues: {
       propertyId: "",
@@ -41,7 +47,9 @@ const AdminListingForm = () => {
       yearBuilt: Yup.number().required("Required").positive("Must be positive").integer("Must be an integer"),
     }),
     onSubmit: (values) => {
-      console.log(values);
+
+
+ 
     },
   });
 
