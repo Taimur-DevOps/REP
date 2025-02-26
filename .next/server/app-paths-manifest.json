@@ -1,0 +1,9 @@
+{
+  "/page": "app/page.js",
+  "/properties/page": "app/properties/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/auth/page": "app/auth/page.js",
+  "/properties/[id]/page": "app/properties/[id]/page.js",
+  "/auth/dashboard/page": "app/auth/dashboard/page.js",
+  "/about/page": "app/about/page.js"
+}
