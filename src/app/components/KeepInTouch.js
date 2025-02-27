@@ -18,9 +18,9 @@ const KeepInTouch = () => {
                 viewBox="0 0 20 16"
                 fill="#fa8f8d"
                 stroke="#fa8f8d"
-                stroke-width="1"
-                stroke-linecap="square"
-                stroke-miterlimit="10"
+                strokeWidth="1"
+                strokeLinecap="square"
+                strokeMiterlimit="10"
               >
                 <g transform="translate(-12.000000, 0)">
                   <path d="M28,0L10,18" />

@@ -52,7 +52,7 @@ const Banner = () => {
           clickable: true,
         }}
         autoplay={{
-          delay: 2500,
+          delay: 10500,
           disableOnInteraction: false,
         }}
         modules={[Navigation, Autoplay]}

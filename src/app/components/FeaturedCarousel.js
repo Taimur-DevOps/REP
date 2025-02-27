@@ -116,7 +116,7 @@ const FeaturedCarousel = () => {
             </p>
           </div>
           <Swiper
-            slidesPerView={1}
+            slidesPerView={3}
             spaceBetween={20}
             breakpoints={breakpoints}
             navigation
@@ -124,7 +124,7 @@ const FeaturedCarousel = () => {
               clickable: true,
             }}
             autoplay={{
-              delay: 2500,
+              delay: 4500,
               disableOnInteraction: false,
             }}
             modules={[Navigation, Autoplay]}

@@ -1,9 +1,7 @@
 "use client";
 
-import React from "react";
-
+import React, { useState } from "react";
 import { HiChevronUpDown } from "react-icons/hi2";
-
 import {
   Combobox,
   ComboboxButton,
@@ -13,39 +11,27 @@ import {
   Transition,
 } from "@headlessui/react";
 
-import { useState } from "react";
-
-const people = [
-  { id: 1, name: "All Cities" },
-  { id: 2, name: "Fort Lauderdale" },
-  { id: 3, name: "Fort Myers" },
-  { id: 4, name: "Miami" },
-  { id: 5, name: "Tampa" },
-];
-
-const FilterDropdown = () => {
+const FilterDropdown = ({ label, options, selectedValue, onChange }) => {
   const [query, setQuery] = useState("");
-  const [selected, setSelected] = useState(people[1]);
 
-  const filteredPeople =
+  const filteredOptions =
     query === ""
-      ? people
-      : people.filter((person) => {
-          return person.name.toLowerCase().includes(query.toLowerCase());
-        });
+      ? options
+      : options.filter((option) =>
+          option.toLowerCase().includes(query.toLowerCase())
+        );
 
   return (
-    <>
-      <Combobox value={selected} onChange={(value) => setSelected(value)}>
+    <div className="relative w-full">
+      <Combobox value={selectedValue} onChange={onChange}>
         <div className="relative">
           <ComboboxInput
-            className="w-full rounded-[4px] border border-[#d1d1d1] py-[9px] pr-8 pl-3 text-sm  !text-[#a1a7a8]"
-            // displayValue={(person) => person?.name}
-            placeholder="Select"
+            className="w-full rounded-[4px] border border-gray-300 py-[9px] pr-8 pl-3 text-sm text-gray-700 placeholder-gray-400 outline-none"
+            placeholder={`Select ${label}`}
             onChange={(event) => setQuery(event.target.value)}
           />
-          <ComboboxButton className="group absolute inset-y-0 right-0 px-2.5">
-            <HiChevronUpDown className="size-4 fill-lightGray" />
+          <ComboboxButton className="absolute inset-y-0 right-0 px-2.5">
+            <HiChevronUpDown className="size-4 text-gray-500" />
           </ComboboxButton>
         </div>
         <Transition
@@ -54,23 +40,24 @@ const FilterDropdown = () => {
           leaveTo="opacity-0"
           afterLeave={() => setQuery("")}
         >
-          <ComboboxOptions
-            anchor="bottom"
-            className="border border-[#d1d1d1] rounded-[4px] bg-white filterDropdown"
-          >
-            {filteredPeople.map((person) => (
-              <ComboboxOption
-                key={person.id}
-                value={person}
-                className="group flex cursor-pointer hover:!bg-[#00aeff1a] items-center gap-2 rounded-lg py-1.5 px-3 select-none"
-              >
-                <div className="text-sm text-lightBlack">{person.name}</div>
-              </ComboboxOption>
-            ))}
+          <ComboboxOptions className="absolute left-0 w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg z-50">
+            {filteredOptions.length > 0 ? (
+              filteredOptions.map((option, index) => (
+                <ComboboxOption
+                  key={index}
+                  value={option}
+                  className="cursor-pointer hover:bg-blue-100 px-3 py-2 text-sm text-gray-700"
+                >
+                  {option}
+                </ComboboxOption>
+              ))
+            ) : (
+              <div className="px-3 py-2 text-sm text-gray-500">No results found</div>
+            )}
           </ComboboxOptions>
         </Transition>
       </Combobox>
-    </>
+    </div>
   );
 };
 
